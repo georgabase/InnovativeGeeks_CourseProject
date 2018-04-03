@@ -1,0 +1,2 @@
+C:\Users\Robert\Source\Repos\bobs class\bobs class\obj\Debug\bobs class.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Source\Repos\bobs class\bobs class\obj\Debug\bobs class.csproj.CoreCompileInputs.cache
