@@ -75,6 +75,6 @@ public partial class ConfirmationForm : System.Web.UI.Page
     {
         object refUrl = ViewState["RefUrl"];
         if (refUrl != null)
-            Response.Redirect((string)refUrl);
+            Response.Redirect((string)refU);
     }
 }
