@@ -4,11 +4,12 @@
 <br/>
 <br/> 
    <table><tr><td>
-     <asp:Label ID="Label2" runat="server" Text="Your Current Balance is: "></asp:Label>
-     </td><td>
+     <asp:Label ID="LabelCurrentBalance" runat="server" Text=""></asp:Label><br/><br/>
 <table><tr><td>
 <asp:Label ID="Label2" runat="server" Text="Your Current Balance is: "></asp:Label>
 </td><td>
+    <asp:Label ID="Label1" runat="server" Text="Amount deducted is: "></asp:Label>
+     </td><td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back" />
 <br />
