@@ -1,11 +1,11 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="ConfirmationForm.aspx.cs" Inherits="ConfirmationForm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Maincontent" Runat="Server">
- <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:Label ID="LabelAcknowledgement" runat="server" Text="Acknowledgement"></asp:Label>
-<br />
-<br />
+<br/>
+<br/> 
+<table><tr><td>
+<asp:Label ID="Label2" runat="server" Text="Your Current Balance is: "></asp:Label>
+</td><td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back" />
 <br />
