@@ -2,8 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Maincontent" Runat="Server">
  <br />
- <br />
- <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Label ID="LabelAcknowledgement" runat="server" Text="Acknowledgement"></asp:Label>
 <br />
