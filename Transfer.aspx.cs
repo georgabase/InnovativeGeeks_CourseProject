@@ -14,11 +14,11 @@ public partial class Transfer : System.Web.UI.Page
     DataSet UserData = new DataSet();
     SqlConnection conn = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = ""C:\USERS\ROBERT\SOURCE\REPOS\BOBS CLASS\BOBS CLASS\APP_DATA\DATABASE\EWALLET.MDF""; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
- 
 
 
 
-  
+
+
     protected void Page_Load(object sender, EventArgs e)
     {
         SqlCommand getbalance = new SqlCommand("SELECT Balance FROM AccountInfo WHERE customerid= @Userid", conn);
@@ -47,7 +47,7 @@ public partial class Transfer : System.Web.UI.Page
                 mpLabel.Visible = true;
                 //Flag = 1;
 
- 
+
 
 
                 try
@@ -58,8 +58,8 @@ public partial class Transfer : System.Web.UI.Page
                     getbalance.Parameters.AddWithValue("@Userid", Session["Userid"]);
                     getcustomerid.Parameters.AddWithValue("@Userid", Session["Userid"]);
 
-                    fnamelbl.Text = Convert.ToString(getbalance.ExecuteScalar());
-                    lnamelbl.Text = Convert.ToString(getcustomerid.ExecuteScalar());
+                    fnamelbl.Text = "";
+
 
                 }
 
@@ -111,24 +111,24 @@ public partial class Transfer : System.Web.UI.Page
                 string email = txtphonemail.Text;
                 int newpayee;
                 int newpayer;
-                
+
 
                 //get payer balance
-                getbalance.Parameters.AddWithValue("@Userid3",username );
+                getbalance.Parameters.AddWithValue("@Userid3", username);
                 bal = Convert.ToInt32(getbalance.ExecuteScalar());
                 fnamelbl.Text = Convert.ToString(bal);
                 getcustomerid.Parameters.AddWithValue("@Userid2", username);
                 payer = Convert.ToString(getcustomerid.ExecuteScalar());
-                 sending = Convert.ToInt32(txtbal.Text);
-                
+                sending = Convert.ToInt32(txtbal.Text);
 
-               
+
+
 
                 if (bal < sending)
                 {
-                    fnamelbl.Text = "error";
+                    fnamelbl.Text = "Error, Insufficient funds";
                 }
-                else 
+                else
                 {
 
                     send = true;
@@ -150,8 +150,8 @@ public partial class Transfer : System.Web.UI.Page
 
                     newpayee = payeebal + sending;
                     newpayer = bal - sending;
-                    
-                     
+
+
 
                     updatebalance.Parameters.AddWithValue("@new", newpayee);
                     updatebalance.Parameters.AddWithValue("@id", id);
@@ -159,7 +159,7 @@ public partial class Transfer : System.Web.UI.Page
                     updatebalance.ExecuteScalar();
 
 
-                     updatebalance2.Parameters.AddWithValue("@new2", newpayer);
+                    updatebalance2.Parameters.AddWithValue("@new2", newpayer);
                     updatebalance2.Parameters.AddWithValue("@id2", username);
                     updatebalance2.ExecuteScalar();
 
@@ -171,7 +171,7 @@ public partial class Transfer : System.Web.UI.Page
 
                 }
 
-          
+
 
             }
 
@@ -179,7 +179,7 @@ public partial class Transfer : System.Web.UI.Page
             {
 
                 conn.Close();
-                
+
             }
             if (send == true)
             {
@@ -187,7 +187,7 @@ public partial class Transfer : System.Web.UI.Page
             }
         }
 
-    
+
         else if (RbtnType1.SelectedValue == "1")
         {
             try
@@ -211,9 +211,9 @@ public partial class Transfer : System.Web.UI.Page
                 getcustomerid.Parameters.AddWithValue("@Userid2", username);
                 payer = Convert.ToString(getcustomerid.ExecuteScalar());
                 sending = Convert.ToInt32(txtbal.Text);
-                if (bal < sending )
+                if (bal < sending)
                 {
-                    fnamelbl.Text = "error";
+                    fnamelbl.Text = "Error, Insufficient funds";
                 }
                 else
                 {
@@ -267,7 +267,7 @@ public partial class Transfer : System.Web.UI.Page
             {
 
                 conn.Close();
-             
+
             }
             if (send == true)
             {

@@ -195,6 +195,9 @@
       <DependentUpon>Help.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +243,7 @@
       <DependentUpon>WithdrawForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Content Include="Help.aspx" />
     <Content Include="TransferConfirm.html" />
   </ItemGroup>
   <ItemGroup>
@@ -342,7 +346,6 @@
     <Content Include="DepositForm.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Help.aspx" />
     <Content Include="image\Calimages.jpg" />
     <Content Include="image\deposit.jpg" />
     <Content Include="image\favicon.ico" />

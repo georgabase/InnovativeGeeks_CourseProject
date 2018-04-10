@@ -1,21 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Help.aspx.cs" Inherits="Help" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Help.aspx.cs" Inherits="bobs_class.Help" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-     <h2> <% %> Let Us Help</h2>
-    <h3>Call</h3>
-    <ul>
-        <li>+1(647)504-0603 Saju Jayson</li>
-        <li>+1(647)518-4624 Will Zhang</li>
-        <li>+1(647)928-3331 Avishek Chauhan</li>
-        <li>+1(647)998-5910 Victor</li>
-        <li>+1(647)376-6587 Lovedeep Kaur Marok</li>
-    </ul>
-    <h3>Mail</h3>
-    <ul>
-        <li>
-            SAJU.jayson@gmail.com
-        </li>
+<!DOCTYPE html>
 
-    </ul>
-</asp:Content>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>
