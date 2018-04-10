@@ -3,6 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Maincontent" Runat="Server">
 <br/>
 <br/> 
+   <table><tr><td>
+     <asp:Label ID="Label2" runat="server" Text="Your Current Balance is: "></asp:Label>
+     </td><td>
 <table><tr><td>
 <asp:Label ID="Label2" runat="server" Text="Your Current Balance is: "></asp:Label>
 </td><td>
