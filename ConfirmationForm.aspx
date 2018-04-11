@@ -12,8 +12,8 @@
 </td><td>
 <asp:Label ID="Label3" runat="server" Text="Your updated balance is: "></asp:Label>
 </td><td>
-<asp:Label ID="LabelUpdatedBalance" runat="server" Text=" "></asp:Label>
-</td></tr></table>
+<asp:Label ID="LabelUpdatedBalance" runat="server" Text=" "></asp:Label><br/><br/>
+</td></tr><tr><td></table>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back" />
 <br />
