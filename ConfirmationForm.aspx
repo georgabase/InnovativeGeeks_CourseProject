@@ -15,15 +15,6 @@
 <asp:Label ID="LabelUpdatedBalance" runat="server" Text=" "></asp:Label><br/><br/>
 </td></tr><tr><td></table>
 <asp:Label ID="LabelUpdatedBalance" runat="server" Text=" "></asp:Label>
-</td></tr></table>
-<br />
-<br />
-<br />
-<center>
-<table style="width:100%;" > <tr><td style="height: 40px"></td></tr>
-<tr><td>
-<asp:Label ID="LabelAcknowledgement" runat="server" Text="Acknowledgement"></asp:Label></td></tr>
-<tr><td></td></tr><tr><td>
 <asp:Button class="button" ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back" />
 </td></tr>
 </table>
