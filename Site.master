@@ -50,6 +50,7 @@
 	<div class="width">
     		<ul>
         		<li class=""><a href="Default.aspx">Home</a></li>
+                <li class=""><a href="About.aspx">About</a></li>
         	    <li class=""><a href="Transfer.aspx">Transfers</a></li>
          	   	<li><a href="DepositForm.aspx">Deposits</a></li>
           	  	<li><a href="BankDetails.aspx">Withdraw</a></li>
