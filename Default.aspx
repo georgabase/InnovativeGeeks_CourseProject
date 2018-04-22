@@ -13,11 +13,10 @@
             
         <div class="jumbotron">
         <ul>
-            <li style="width:800px"><asp:Button ID="BtnTransfer"   Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/transfer.png'); background-size:cover; cursor:hand;" Width="200px" Height="200px" runat="server" Text="Transfer " OnClick="BtnTransfer_Click" /></li>
-            <li style="width:800px"><asp:Button ID="BtnDeposit" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/deposit.png'); background-size:cover; cursor:hand;" Width="200px" Height="200px"  runat="server" Text="Deposit " OnClick="BtnDeposit_Click" /></li>
-            <li style="width:800px"><asp:Button ID="BtnWithdraw" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/withdraw.png'); background-size:cover; cursor:hand;" Width="200px" Height="200px"  runat="server" Text="Withdraw" OnClick="BtnWithdraw_Click" /></li>
-            <li style="width:800px"><asp:Button ID="BtnHistory" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/history.png'); background-size:cover; cursor:hand;" Width="200px" Height="200px"  runat="server" Text="History" OnClick="BtnHistory_Click" /></li>
-             <li style="width:800px"><asp:Button ID="BtnEdit" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/history.png'); background-size:cover; cursor:hand;" Width="200px" Height="200px"  runat="server" Text="Edit" OnClick="BtnEdit_Click" /></li>
+            <li style="width:800px"><asp:Button ID="BtnTransfer"   Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/transfer.png'); background-size:cover; cursor:hand;" Width="724px" Height="200px" runat="server" Text="Transfer " OnClick="BtnTransfer_Click" /></li>
+            <li style="width:800px"><asp:Button ID="BtnDeposit" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/deposit.png'); background-size:cover; cursor:hand;" Width="721px" Height="200px"  runat="server" Text="Deposit " OnClick="BtnDeposit_Click" /></li>
+            <li style="width:800px"><asp:Button ID="BtnWithdraw" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/withdraw.png'); background-size:cover; cursor:hand;" Width="723px" Height="200px"  runat="server" Text="Withdraw" OnClick="BtnWithdraw_Click" /></li>
+            <li style="width:800px"><asp:Button ID="BtnHistory" Font-Bold="True" Font-Size="XX-Large" style=" font-size:larger; background-image:url('image/history.png'); background-size:cover; cursor:hand;" Width="724px" Height="200px"  runat="server" Text="History" OnClick="BtnWithdraw_Click" /></li>
   
             </ul>
             <center>
